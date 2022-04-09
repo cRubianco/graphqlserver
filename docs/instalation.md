@@ -6,15 +6,17 @@
 3)  Instalo Babel 
       ver UserGuide en [https://babeljs.io/docs/en/usage]babeljs
       npm install --save-dev @babel/core @babel/cli @babel/preset-env    
+      npm i -D @babel/core @babel/cli @babel/preset-env @babel/register
+      npm i @babel/polyfill core-js
 
-      creo el archivo .babelrc  
+      creo el archivo .babelrc  con el siguiente contenido
       
-      dentro de este 
       {
         "presets": [
           "@babel/preset-env"
         ]
-      }    
+      }
+
 
 4) Instalo babel para poder usarlo con node
   npm i @babel/node -D
