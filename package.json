@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --source-maps",
-    "start": "nodemon src/index.js, npx babel/node",
+    "start": "nodemon --exec npm run babel-node src/index.js",
+    "babel-node": "babel-node --presets=@babel/preset-env",
+
+    "start2": "babel-node src/index.js",
+    "start1": "nodemon src/index.js --exec babel-node",
     "serve": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist"

@@ -23,6 +23,8 @@
 
 5) En package.json dentro de scripts defino un nuevo script llamado build
       "build": "babel src -d dist --source-maps",
+      "start": "nodemon src/index.js, npx babel/node",
+      "serve": "node dist/index.js",
 
     Este buscará en la carpeta src el código fuente y lo convertira en la carpeta dist 
     y con la opción --source-maps le indico que cree los archivos para debuguear la aplicación
